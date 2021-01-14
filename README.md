@@ -22,7 +22,7 @@
     - `-d` là tùy chọn cài mặc định
     - Cài xong, bạn sẽ tự động chuyển từ brach `master` sang `develop`
     ![Kết quả](image/image-1.png)
-- Step 7: Bước 1-6 khi bắt đầu dự án, từ step 7 các CLI sẽ được lặp lại đến khi hoàn thành.
+- Step 7: Bước 1-6 khi bắt đầu dự án, từ step 7 các CLI sẽ được lặp lại đến khi hoàn thành. Push các all tag lên repo: `git push origin master`
     - Tạo feature từ nhánh develop:
     ```
     git flow feature start day-1
@@ -31,4 +31,11 @@
     ```
     git commit -m 'Add readme.me'
     ```
-- 
+- Step 9: Push commit mới từ branch `feature/day-1` lên repo
+    ```
+    git push origin feature/day-1
+    ```
+- Step 10: Lên repo online trên Github or Gitlab, chọn create Pull Request nếu ở Github or Merge Request nếu ở Gitlab, settings compare and từ `feature/day-1` đến đevelop. Chú ý mặc định sẽ tạo merge vào master
+- Sau khi phát triển các merge xong có thể chọn giữ hoặc xóa feature
+- Hoàn thành feature, thì tiến hành vào develop thực hiện sở step 10 merge develop vào master
+    ```
